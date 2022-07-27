@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  mastermind:
+    container_name: mastermind
+    build: .
+    command: tail -f /dev/null
+    volumes:
+      - ./:/code
